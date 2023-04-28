@@ -37,7 +37,7 @@ const App = () => {
                 }}
                 className="lg:pl-10 pt-5"
               >
-                <h2 className="text-[32px] lg:text-[48px] font-bold text-gray-500 tracking-wide ">
+                <h2 className="text-[29px] lg:text-[48px] font-bold text-gray-500 tracking-wide  ">
                   ADVANCED PAYMENT GATEWAY SOLUTION FOR{" "}
                   <span className="text-[#90c841]">AFRICA</span>{" "}
                 </h2>
@@ -58,7 +58,7 @@ const App = () => {
                   className=" mt-2"
                 >
                   <button className="px-2 py-1 bg-[#124072] rounded-lg text-gray-200">
-                    Contact Us
+                  <a href="#contact">Contact Us</a>  
                   </button>
                 </m.div>
               </m.div>
@@ -94,77 +94,73 @@ const App = () => {
                   alt="cloud interactive logo"
                   className="h-10"
                 />
-                 <img
+                <img
                   src="/joslogo.jpeg"
                   alt="jos disco logo"
                   className="h-10"
                 />
-                <img
-                  src="/nibosslogo.png"
-                  alt="niboss logo"
-                  className="h-10"
-                />
-                <img
-                  src="/easypay.png"
-                  alt="easypay logo"
-                  className="h-10"
-                />
+                <img src="/nibosslogo.png" alt="niboss logo" className="h-10" />
+                <img src="/easypay.png" alt="easypay logo" className="h-10" />
               </div>
             </div>
           </section>
           {/* services */}
           <section
             id="services"
-            className="bg-[#90c841] py-10 px-[30px] md:px-[80px] lg:px-[130px] "
+            className="bg-[#90c841] opacity-90 py-10 px-3 md:px-[80px] lg:px-[130px] "
           >
             <h2 className="text-[28px] text-[#124072de] font-bold mb-4 text-center">
               Products
             </h2>
-            <p className="text-gray-50 text-sm text-justify mb-8">
-              we're committed to providing you with only the best products that
-              efficiently serve your needs. That's why we use the latest
-              technologies to ensure that our products are always up to date and
-              of the highest quality. We believe that technology plays a crucial
-              role in the development and delivery of exceptional products, and
-              we're constantly seeking new ways to leverage the latest tools and
-              techniques to improve our offerings. From cutting-edge software to
-              advanced hardware, we're always on the lookout for the latest
-              innovations that can help us deliver products that exceed your
-              expectations. And with our team of expert engineers and designers,
-              you can be sure that every product we deliver is crafted with the
-              utmost care and attention to detail.
-            </p>
+            <div className="bg-[#fafafa] p-2 shadow rounded-lg">
+              <p className="text-[#718096] text-sm text-justify mb-8">
+                we're committed to providing you with only the best products
+                that efficiently serve your needs. That's why we use the latest
+                technologies to ensure that our products are always up to date
+                and of the highest quality. We believe that technology plays a
+                crucial role in the development and delivery of exceptional
+                products, and we're constantly seeking new ways to leverage the
+                latest tools and techniques to improve our offerings.
+                <br />
+                <br />
+                From cutting-edge software to advanced hardware, we're always on
+                the lookout for the latest innovations that can help us deliver
+                products that exceed your expectations. And with our team of
+                expert engineers and designers, you can be sure that every
+                product we deliver is crafted with the utmost care and attention
+                to detail.
+              </p>
+            </div>
+
             <div>
-              <div className=" flex flex-col md:flex-row items-center w-full gap-8">
-                <div>
+              <div className=" flex flex-col md:flex-row items-center w-full gap-8 mt-6">
+                <div className="relative">
+                <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[400px] skew-y-12 -z-20"></div>
                   <h2 className="text-[28px] text-[#124072de] font-bold mb-2 ">
                     Bill Vending
                   </h2>
-                  <p className="text-gray-200 text-sm text-justify">
-                    Looking for a convenient and hassle-free way to pay your
-                    bills? Look no further than our user-friendly platform! With
-                    just a few clicks, you can easily top up your airtime and
-                    data, or pay your electricity bill instantly. Our platform
-                    is designed to make bill payments a breeze, so you can spend
-                    less time worrying about bills and more time enjoying life.
-                    Plus, with our secure and reliable payment system, you can
-                    rest assured that your transactions are always safe and
-                    secure. So why wait? Start using our platform today and
-                    experience the convenience of instant bill payments!
+                  {/* <div className="bg-[#fafafa] p-2 shadow rounded-lg"> */}
+                  <p className="text-[#718096] text-sm text-justify mb-8">
+                    Our platform is designed to make bill payments a breeze, so
+                    you can spend less time worrying about bills and more time
+                    enjoying life. Plus, with our secure and reliable payment
+                    system, you can rest assured that your transactions are
+                    always safe and secure.
                   </p>
+                  {/* </div> */}
                   <h3 className="text-[20px] text-[#124072de] font-bold mb-2 ">
                     features
                   </h3>
                   <ul>
-                    <li className="text-sm tracking-widest text-gray-300 ">
-                      <span className="text-md text-[#124072de] font-bold  ">
+                    <li className="text-lg tracking-widest text-[#124072de] ">
+                      <span className="text-lg text-gray-100 font-bold  ">
                         *
                       </span>{" "}
                       Airtime/Data Bills
                     </li>
-                    <li className="text-sm tracking-widest text-gray-300 ">
+                    <li className="text-lg tracking-widest text-[#124072de] ">
                       {" "}
-                      <span className="text-md text-[#124072de] font-bold  ">
+                      <span className="text-lg text-gray-100 font-bold  ">
                         *
                       </span>{" "}
                       Electricity
@@ -174,68 +170,71 @@ const App = () => {
                 <img
                   src="/electricity.png"
                   alt="electricity"
-                  className="h-[360px] md:h-[400px] md:w-[480px] lg:h-[420px] lg:w-[580px] "
+                  className="h-[240px] w-full md:h-[400px] md:w-[480px] lg:h-[420px] lg:w-[580px] object-center"
                 />
               </div>
 
               <div className=" flex flex-col  md:flex-row-reverse items-center w-full gap-8">
-                <div>
+                <div className="relative">
+                <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[400px] -skew-y-12 -z-20"></div>
                   <h2 className="text-[28px] text-[#124072de] font-bold mb-2 ">
                     Payment Gateway
                   </h2>
-                  <p className="text-gray-200 text-sm text-justify">
-                    At our company, we know how important it is to provide your
-                    customers with a seamless payment experience. That's why
-                    we've developed an easy-to-use payment channel that allows
-                    your customers to make payments anytime and anywhere in the
-                    world. Our platform is designed to be user-friendly and
-                    intuitive, making it easy for your customers to navigate and
-                    complete transactions. <br /> Plus, with our secure and reliable
-                    payment processing system, you can accept payments and
-                    receive funds seamlessly from anyone, anywhere in the world.
-                    Whether you're running a small business or a large
-                    enterprise, our payment platform is designed to meet your
-                    needs and help you grow your business. <br /> So why wait? Sign up
-                    for our payment platform today and start accepting payments
-                    from customers all over the world. With our easy and
-                    seamless channel, you'll be able to provide your customers
-                    with the payment experience they deserve, while growing your
-                    business and expanding your reach.
+                  <p className="text-[#718096] text-sm text-justify">
+                    Our platform is designed to be user-friendly and intuitive,
+                    making it easy for your customers to navigate and complete
+                    transactions.
+                    <br />
+                    <br />
+                    Plus, with our secure and reliable payment processing
+                    system, you can accept payments and receive funds seamlessly
+                    from anyone, anywhere in the world. Whether you're running a
+                    small business or a large enterprise, our payment platform
+                    is designed to meet your needs and help you grow your
+                    business.
+                    <br />
+                    <br />
+                    So why wait? Sign up for our payment platform today and
+                    start accepting payments from customers all over the world.
+                    With our easy and seamless channel, you'll be able to
+                    provide your customers with the payment experience they
+                    deserve, while growing your business and expanding your
+                    reach.
                   </p>
                   <h3 className="text-[20px] text-[#124072de] font-bold mb-2 ">
                     features
                   </h3>
                   <ul>
-                    <li className="text-sm tracking-widest text-gray-300 ">
-                      <span className="text-md text-[#124072de] font-bold  ">
+                    <li className="text-lg tracking-widest text-[#124072de]">
+                      <span className="text-lg text-gray-100 font-bold  ">
                         *
                       </span>{" "}
                       QR Code
                     </li>
-                    <li className="text-sm tracking-widest text-gray-300 ">
+                    <li className="text-lg tracking-widest text-[#124072de] ">
                       {" "}
-                      <span className="text-md text-[#124072de] font-bold  ">
+                      <span className="text-lg text-gray-100 font-bold  ">
                         *
                       </span>{" "}
                       USSD Code
                     </li>
-                    <li className="text-sm tracking-widest text-gray-300 ">
+                    <li className="text-lg tracking-widest text-[#124072de] ">
                       {" "}
-                      <span className="text-md text-[#124072de] font-bold  ">
+                      <span className="text-lg text-gray-100 font-bold  ">
                         *
                       </span>{" "}
                       Debit Card
                     </li>
-                    <li className="text-sm tracking-widest text-gray-300 ">
+                    <li className="text-lg tracking-widest text-[#124072de] ">
                       {" "}
-                      <span className="text-md text-[#124072de] font-bold  ">
+                      <span className="text-lg text-gray-100 font-bold  ">
                         *
                       </span>{" "}
                       POS
                     </li>
-                    <li className="text-sm tracking-widest text-gray-300 ">
+                    <li className="text-lg tracking-widest text-[#124072de] ">
                       {" "}
-                      <span className="text-md text-[#124072de] font-bold  ">
+                      <span className="text-lg text-gray-100 font-bold  ">
                         *
                       </span>{" "}
                       Tranfer
@@ -245,6 +244,7 @@ const App = () => {
                 <img
                   src="/restaurant.jpg"
                   alt="man smiling in a resturant"
+                  loading="lazy"
                   className="h-[360px] md:h-[400px] md:w-[480px]  lg:h-[420px] lg:w-[580px] object-cover "
                 />
               </div>
@@ -306,11 +306,11 @@ const App = () => {
           <section></section>
 
           {/* contact us */}
-          <section className="bg-[#90c841] py-9 px-[30px] md:px-[80px] lg:px-[130px] ">
+          <section id="contact" className="bg-[#90c841] py-9 px-[30px] md:px-[80px] lg:px-[130px] ">
             <div>
-            <h2 className="text-[28px] text-[#124072de] font-bold mb-4 text-center">
-              CONTACT US
-            </h2>
+              <h2 className="text-[28px] text-[#124072de] font-bold mb-4 text-center">
+                CONTACT US
+              </h2>
               <form
                 onSubmit={handleSubmit(onSubmit)}
                 action=""
