@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#124072] py-5 px-[30px] md:px-[80px] lg:px-[130px]">
+    <footer className="bg-[#124072] py-5 px-3 md:px-[80px] lg:px-[130px]">
       <div className="wrapper reveal">
         <div className="flex lg:flex-row flex-col w-full gap-3">
           <div className="flex-2 text-gray-100 pr-4">
@@ -17,13 +17,13 @@ const Footer = () => {
               <h4>Quick Link</h4>
               <ul>
                 <li>
-                  <p>How it works</p>
+                  <p>Home</p>
                 </li>
                 <li>
-                  <p>Benefits</p>
+                  <p>Products</p>
                 </li>
                 {/* <li>
-              <a href="#review">What customers say</a>
+              <a href="#review">Why you should use Paylode</a>
             </li> */}
                 <li>
                   <p>FAQ</p>
@@ -35,15 +35,15 @@ const Footer = () => {
               <ul className="contact">
                 <li>
                   <i className="fas fa-phone"></i>
-                  <p>1 800 234 3432</p>
+                  <p>+234 8083 8100 30</p>
                 </li>
                 <li>
                   <i className="fas fa-location-dot"></i>
-                  <p>10 Afeez Jakande Alausa, Ikeja, Lagos.</p>
+                  <p>51c, Remi Fani Kayode Avenue, GRA Ikeja, Lagos.</p>
                 </li>
                 <li>
                   <i class="fas fa-briefcase"></i>
-                  <p>ao-initiative.com</p>
+                  <p>sales@paylodeservices.com</p>
                 </li>
               </ul>
             </div>
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="copyright text-center text-gray-100">© Paylode ltd 2023. All rights reserved.</p>
+        <p className="copyright text-center mt-4 text-xs text-gray-200">© Paylode ltd 2023. All rights reserved.</p>
       </div>
     </footer>
   );
