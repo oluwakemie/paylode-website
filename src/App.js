@@ -112,7 +112,7 @@ const App = () => {
             <h2 className="text-[28px] text-[#124072de] font-bold mb-4 text-center">
               Products
             </h2>
-            <div className="bg-[#fafafa] p-2 shadow rounded-lg">
+            {/* <div className="bg-[#fafafa] p-2 shadow rounded-lg"> */}
               <p className="text-[#718096] text-sm text-justify mb-8">
                 we're committed to providing you with only the best products
                 that efficiently serve your needs. That's why we use the latest
@@ -130,7 +130,7 @@ const App = () => {
                 product we deliver is crafted with the utmost care and attention
                 to detail.
               </p>
-            </div>
+            {/* </div> */}
 
             <div>
               <div className=" flex flex-col md:flex-row items-center w-full gap-8 mt-6">
