@@ -306,8 +306,11 @@ const App = () => {
           <section></section>
 
           {/* contact us */}
-          <section className="bg-[#90c841] py-6 px-[30px] md:px-[80px] lg:px-[130px] ">
+          <section className="bg-[#90c841] py-9 px-[30px] md:px-[80px] lg:px-[130px] ">
             <div>
+            <h2 className="text-[28px] text-[#124072de] font-bold mb-4 text-center">
+              CONTACT US
+            </h2>
               <form
                 onSubmit={handleSubmit(onSubmit)}
                 action=""
