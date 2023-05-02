@@ -11,7 +11,7 @@ const Header = () => {
     setShowMenu(!showMenu);
   };
   return (
-    <div className="sticky w-full bg-gray-100 z-1000 lg:relative ">
+    <div className="sticky w-full bg-gray-100 z-1000 lg:relative shadow ">
       <div className="flex flex-row items-center  justify-between relative px-[30px] md:px-[80px] lg:px-[130px] py-[12px]">
         <img src="/paylodelogo.png" alt="" className="lg:h-[45px] h-[38px]" />
 
