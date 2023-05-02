@@ -35,9 +35,9 @@ const App = () => {
                 transition={{
                   duration: 1.5,
                 }}
-                className="lg:pl-10 pt-5"
+                className=" pt-5"
               >
-                <h2 className="text-[29px] lg:text-[48px] font-bold text-gray-500 tracking-wide  ">
+                <h2 className="text-[29px] lg:text-[46px] font-bold text-gray-500 tracking-wide  ">
                   ADVANCED PAYMENT GATEWAY SOLUTION FOR{" "}
                   <span className="text-[#90c841]">AFRICA</span>{" "}
                 </h2>
@@ -58,7 +58,7 @@ const App = () => {
                   className=" mt-2"
                 >
                   <button className="px-2 py-1 bg-[#124072] rounded-lg text-gray-200">
-                  <a href="#contact">Contact Us</a>  
+                    <a href="#contact">Contact Us</a>
                   </button>
                 </m.div>
               </m.div>
@@ -113,29 +113,27 @@ const App = () => {
               Products
             </h2>
             {/* <div className="bg-[#fafafa] p-2 shadow rounded-lg"> */}
-              <p className="text-[#718096] text-sm text-justify mb-8">
-                we're committed to providing you with only the best products
-                that efficiently serve your needs. That's why we use the latest
-                technologies to ensure that our products are always up to date
-                and of the highest quality. We believe that technology plays a
-                crucial role in the development and delivery of exceptional
-                products, and we're constantly seeking new ways to leverage the
-                latest tools and techniques to improve our offerings.
-                <br />
-                <br />
-                From cutting-edge software to advanced hardware, we're always on
-                the lookout for the latest innovations that can help us deliver
-                products that exceed your expectations. And with our team of
-                expert engineers and designers, you can be sure that every
-                product we deliver is crafted with the utmost care and attention
-                to detail.
-              </p>
+            <p className="text-[#718096] text-sm text-justify mb-8">
+              We use the latest technologies to ensure that our products are
+              always up to date and of the highest quality. We believe that
+              technology plays a crucial role in the development and delivery of
+              exceptional products, and we're constantly seeking new ways to
+              leverage the latest tools and techniques to improve our offerings.
+              <br />
+              <br />
+              From cutting-edge software to advanced hardware, we're always on
+              the lookout for the latest innovations that can help us deliver
+              products that exceed your expectations. And with our team of
+              expert engineers and designers, you can be sure that every product
+              we deliver is crafted with the utmost care and attention to
+              detail.
+            </p>
             {/* </div> */}
 
             <div>
               <div className=" flex flex-col md:flex-row items-center w-full gap-8 mt-6">
                 <div className="relative">
-                <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[400px] skew-y-12 -z-20"></div>
+                  <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[400px] skew-y-12 -z-20"></div>
                   <h2 className="text-[28px] text-[#124072de] font-bold mb-2 ">
                     Bill Vending
                   </h2>
@@ -149,7 +147,7 @@ const App = () => {
                   </p>
                   {/* </div> */}
                   <h3 className="text-[20px] text-[#124072de] font-bold mb-2 ">
-                    features
+                    Features
                   </h3>
                   <ul>
                     <li className="text-lg tracking-widest text-[#124072de] ">
@@ -170,13 +168,13 @@ const App = () => {
                 <img
                   src="/electricity.png"
                   alt="electricity"
-                  className="h-[240px] w-full md:h-[400px] md:w-[480px] lg:h-[420px] lg:w-[580px] object-center"
+                  className="h-[240px] w-full md:h-[400px] md:w-[350px] lg:h-[420px] lg:w-[350px] object-contain"
                 />
               </div>
 
               <div className=" flex flex-col  md:flex-row-reverse items-center w-full gap-8">
-                <div className="relative">
-                <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[400px] -skew-y-12 -z-20"></div>
+                <div className="relative w-full">
+                  <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[400px] -skew-y-12 -z-20"></div>
                   <h2 className="text-[28px] text-[#124072de] font-bold mb-2 ">
                     Payment Gateway
                   </h2>
@@ -202,7 +200,7 @@ const App = () => {
                     reach.
                   </p>
                   <h3 className="text-[20px] text-[#124072de] font-bold mb-2 ">
-                    features
+                    Features
                   </h3>
                   <ul>
                     <li className="text-lg tracking-widest text-[#124072de]">
@@ -245,7 +243,7 @@ const App = () => {
                   src="/restaurant.jpg"
                   alt="man smiling in a resturant"
                   loading="lazy"
-                  className="h-[360px] md:h-[400px] md:w-[480px]  lg:h-[420px] lg:w-[580px] object-cover "
+                  className="h-[360px] md:h-[400px] md:w-[350px]  lg:h-[420px] lg:w-[350px] sm:object-cover "
                 />
               </div>
             </div>
@@ -306,7 +304,10 @@ const App = () => {
           <section></section>
 
           {/* contact us */}
-          <section id="contact" className="bg-[#90c841] py-9 px-[30px] md:px-[80px] lg:px-[130px] ">
+          <section
+            id="contact"
+            className="bg-[#90c841] py-9 px-[30px] md:px-[80px] lg:px-[130px] "
+          >
             <div>
               <h2 className="text-[28px] text-[#124072de] font-bold mb-4 text-center">
                 CONTACT US
@@ -343,7 +344,7 @@ const App = () => {
                 ></textarea>
                 <button
                   type="submit"
-                  className="bg-[#124072] py-5 px-10 rounded-md text-gray-50 font-bold text-lg"
+                  className="bg-[#124072] lg:w-[90px] self-center py-5 px-10 md:px-4 rounded-md text-gray-50 font-bold text-lg"
                 >
                   Submit
                 </button>
