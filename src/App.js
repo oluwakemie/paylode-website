@@ -106,14 +106,14 @@ const App = () => {
           </section>
           {/* services */}
           <section
-            id="services"
+            id="product"
             className="bg-[#90c841] opacity-90 py-10 px-3 md:px-[80px] lg:px-[130px] "
           >
             <h2 className="text-[28px] text-[#124072de] font-bold mb-4 text-center">
               Products
             </h2>
             {/* <div className="bg-[#fafafa] p-2 shadow rounded-lg"> */}
-            <p className="text-[#718096] text-sm text-justify mb-8">
+            <p className="text-gray-100 text-md text-justify mb-8">
               We use the latest technologies to ensure that our products are
               always up to date and of the highest quality. We believe that
               technology plays a crucial role in the development and delivery of
@@ -133,12 +133,12 @@ const App = () => {
             <div>
               <div className=" flex flex-col md:flex-row items-center w-full gap-8 mt-6">
                 <div className="relative">
-                  <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[400px] skew-y-12 -z-20"></div>
+                  <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[80%] skew-y-12 -z-20"></div>
                   <h2 className="text-[28px] text-[#124072de] font-bold mb-2 ">
                     Bill Vending
                   </h2>
                   {/* <div className="bg-[#fafafa] p-2 shadow rounded-lg"> */}
-                  <p className="text-[#718096] text-sm text-justify mb-8">
+                  <p className="text-gray-100 text-md text-justify mb-8">
                     Our platform is designed to make bill payments a breeze, so
                     you can spend less time worrying about bills and more time
                     enjoying life. Plus, with our secure and reliable payment
@@ -174,11 +174,11 @@ const App = () => {
 
               <div className=" flex flex-col  md:flex-row-reverse items-center w-full gap-8">
                 <div className="relative w-full">
-                  <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[400px] -skew-y-12 -z-20"></div>
+                  <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[80%] -skew-y-12 -z-20"></div>
                   <h2 className="text-[28px] text-[#124072de] font-bold mb-2 ">
                     Payment Gateway
                   </h2>
-                  <p className="text-[#718096] text-sm text-justify">
+                  <p className="text-gray-100 text-md text-justify">
                     Our platform is designed to be user-friendly and intuitive,
                     making it easy for your customers to navigate and complete
                     transactions.
@@ -221,7 +221,7 @@ const App = () => {
                       <span className="text-lg text-gray-100 font-bold  ">
                         *
                       </span>{" "}
-                      Debit Card
+                      Debit and Credit Card
                     </li>
                     <li className="text-lg tracking-widest text-[#124072de] ">
                       {" "}
@@ -235,16 +235,18 @@ const App = () => {
                       <span className="text-lg text-gray-100 font-bold  ">
                         *
                       </span>{" "}
-                      Tranfer
+                     Mobile and Internet Transfer
                     </li>
                   </ul>
                 </div>
+                <div className="w-full">
                 <img
                   src="/restaurant.jpg"
                   alt="man smiling in a resturant"
                   loading="lazy"
                   className="h-[360px] md:h-[400px] md:w-[350px]  lg:h-[420px] lg:w-[350px] sm:object-cover "
                 />
+                </div>
               </div>
             </div>
           </section>

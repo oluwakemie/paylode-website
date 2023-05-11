@@ -1,8 +1,10 @@
 import React from "react";
+import {GoLocation, GoMail} from "react-icons/go";
+import {BsTelephone} from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#124072] py-5 text-[9px] px-3 md:px-[80px] lg:px-[130px]">
+    <footer className="bg-[#124072] py-5 text-[14px] px-3 md:px-[80px] lg:px-[130px]">
       <div className="wrapper reveal">
         <div className="flex lg:flex-row flex-col w-full gap-3">
           <div className="flex-2 text-gray-100 pr-4">
@@ -16,16 +18,16 @@ const Footer = () => {
             <div class="box-item">
               <h4>Quick Link</h4>
               <ul>
-                <li className="py-3">
+                <li className="py-2">
                   <p>Home</p>
                 </li>
-                <li className="py-3">
+                <li className="py-2">
                   <p>Products</p>
                 </li>
                 {/* <li>
               <a href="#review">Why you should use Paylode</a>
             </li> */}
-                <li className="py-3">
+                <li className="py-2">
                   <p>FAQ</p>
                 </li>
               </ul>
@@ -33,16 +35,17 @@ const Footer = () => {
             <div className="box-item">
               <h4 >Contact</h4>
               <ul className="contact">
-                <li className="py-3">
-                  <i className="fas fa-phone"></i>
+                <li className="py-2 flex gap-1 items-center">
+                  <BsTelephone/>
                   <p>+234 8083 8100 30</p>
                 </li>
-                <li className="py-3">
-                  <i className="fas fa-location-dot"></i>
-                  <p>51c, Remi Fani Kayode Avenue, GRA Ikeja, Lagos.</p>
+                <li className="py-2 flex gap-1 items-center">
+                  {/* <i className="fas fa-location-dot"></i> */}
+                  <GoLocation/> <p>51c, Remi Fani Kayode Avenue, GRA Ikeja, Lagos.</p>
+                 
                 </li>
-                <li className="py-3">
-                  <i class="fas fa-briefcase"></i>
+                <li className="py-2 flex gap-1 items-center">
+                  <GoMail/>
                   <p>sales@paylodeservices.com</p>
                 </li>
               </ul>
@@ -50,10 +53,10 @@ const Footer = () => {
             <div className="box-item">
               <h4>Legal</h4>
               <ul>
-                <li className="py-3">
+                <li className="py-2">
                   <p>Terms of Use</p>
                 </li>
-                <li className="py-3">
+                <li className="py-2">
                   <p>Privacy Policy</p>
                 </li>
               </ul>
