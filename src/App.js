@@ -99,7 +99,7 @@ const App = () => {
                   alt="jos disco logo"
                   className="h-10"
                 />
-                <img src="/nibosslogo.png" alt="niboss logo" className="h-10" />
+                <img src="/nibsslogo.png" alt="niboss logo" className="h-10" />
                 <img src="/easypay.png" alt="easypay logo" className="h-10" />
               </div>
             </div>
@@ -113,7 +113,7 @@ const App = () => {
               Products
             </h2>
             {/* <div className="bg-[#fafafa] p-2 shadow rounded-lg"> */}
-            <p className="text-gray-100 text-md text-justify mb-8">
+            <p className="text-white text-md text-justify mb-8">
               We use the latest technologies to ensure that our products are
               always up to date and of the highest quality. We believe that
               technology plays a crucial role in the development and delivery of
@@ -138,7 +138,7 @@ const App = () => {
                     Bill Vending
                   </h2>
                   {/* <div className="bg-[#fafafa] p-2 shadow rounded-lg"> */}
-                  <p className="text-gray-100 text-md text-justify mb-8">
+                  <p className="text-white text-md text-justify mb-8 px-1">
                     Our platform is designed to make bill payments a breeze, so
                     you can spend less time worrying about bills and more time
                     enjoying life. Plus, with our secure and reliable payment
@@ -178,7 +178,7 @@ const App = () => {
                   <h2 className="text-[28px] text-[#124072de] font-bold mb-2 ">
                     Payment Gateway
                   </h2>
-                  <p className="text-gray-100 text-md text-justify">
+                  <p className="text-white text-md text-justify px-1">
                     Our platform is designed to be user-friendly and intuitive,
                     making it easy for your customers to navigate and complete
                     transactions.
@@ -251,11 +251,11 @@ const App = () => {
             </div>
           </section>
           {/* Features */}
-          <section className="bg-slate-100 py-6 px-[30px] md:px-[80px] lg:px-[130px] ">
-            <h2 className="text-[28px] text-[#124072de] font-bold mb-4">
+          <section className="bg-slate-100 py-9 px-[30px] md:px-[80px] lg:px-[130px] ">
+            <h2 className="text-[28px] text-[#124072de] text-center font-bold mb-4">
               WHY YOU SHOULD USE PAYLODE
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-4 ">
               <div className="shadow rounded-lg bg-slate-100 text-center py-4 px-3">
                 <img
                   src="/heroImageremovebg.png"
@@ -325,12 +325,14 @@ const App = () => {
                     placeholder="Name"
                     type="text"
                     className="contactInput w-full"
+                    required
                   />
                   <input
                     {...register("email")}
                     placeholder="Email"
                     type="email"
                     className="contactInput w-full"
+                    required
                   />
                 </div>
                 <input
@@ -338,6 +340,7 @@ const App = () => {
                   placeholder="Subject"
                   type="text"
                   className="contactInput"
+                  required
                 />
                 <textarea
                   {...register("message")}
