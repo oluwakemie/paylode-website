@@ -132,7 +132,7 @@ const App = () => {
 
             <div>
               <div className=" flex flex-col md:flex-row items-center w-full gap-8 mt-6">
-                <div className="relative">
+                <div className="relative md:w-[50%] w-full">
                   <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[80%] skew-y-12 -z-20"></div>
                   <h2 className="text-[28px] text-[#124072de] font-bold mb-2 ">
                     Bill Vending
@@ -165,11 +165,12 @@ const App = () => {
                     </li>
                   </ul>
                 </div>
+                <div className="md:w-[50%] w-full flex justify-center">
                 <img
-                  src="/electricity.png"
+                  src="/electImage.png"
                   alt="electricity"
-                  className="h-[240px] w-full md:h-[400px] md:w-[350px] lg:h-[420px] lg:w-[350px] object-contain"
-                />
+                  className="h-[240px] w-full md:h-[360px]  mx-auto   object-cover"
+                /></div>
               </div>
 
               <div className=" flex flex-col  md:flex-row-reverse items-center w-full gap-8">
