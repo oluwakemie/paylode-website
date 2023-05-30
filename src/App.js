@@ -113,7 +113,7 @@ const App = () => {
               Products
             </h2>
             {/* <div className="bg-[#fafafa] p-2 shadow rounded-lg"> */}
-            <p className="text-white text-md text-justify mb-8">
+            <p className="text-white text-[20px] lg:text-[24px] text-md text-justify mb-8">
               We use the latest technologies to ensure that our products are
               always up to date and of the highest quality. We believe that
               technology plays a crucial role in the development and delivery of
@@ -131,14 +131,14 @@ const App = () => {
             {/* </div> */}
 
             <div>
-              <div className=" flex flex-col md:flex-row items-center w-full gap-8 mt-6">
+              <div className=" flex flex-col md:flex-row items-center w-full gap-8 mt-[36px] md:mt-[56px]">
                 <div className="relative md:w-[50%] w-full">
-                  <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[80%] skew-y-12 -z-20"></div>
-                  <h2 className="text-[28px] text-[#124072de] font-bold mb-2 ">
+                  {/* <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[80%] skew-y-12 -z-20"></div> */}
+                  <h2 className="text-[20px] lg:text-[24px] text-[#124072de] font-bold mb-2 ">
                     Bill Vending
                   </h2>
                   {/* <div className="bg-[#fafafa] p-2 shadow rounded-lg"> */}
-                  <p className="text-white text-md text-justify mb-8 px-1">
+                  <p className="text-[20px] lg:text-[24px] lg:text-[36px] text-justify mb-8 px-1">
                     Our platform is designed to make bill payments a breeze, so
                     you can spend less time worrying about bills and more time
                     enjoying life. Plus, with our secure and reliable payment
@@ -146,19 +146,19 @@ const App = () => {
                     always safe and secure.
                   </p>
                   {/* </div> */}
-                  <h3 className="text-[20px] text-[#124072de] font-bold mb-2 ">
+                  <h3 className="text-[20px] lg:text-[24px] text-[#124072de] font-bold mb-2 ">
                     Features
                   </h3>
                   <ul>
-                    <li className="text-lg tracking-widest text-[#124072de] ">
-                      <span className="text-lg text-gray-100 font-bold  ">
+                    <li className="text-[20px] lg:text-[24px] tracking-widest text-[#124072de] ">
+                      <span className="text-gray-100 font-bold  ">
                         *
                       </span>{" "}
                       Airtime/Data Bills
                     </li>
-                    <li className="text-lg tracking-widest text-[#124072de] ">
+                    <li className="text-[20px] lg:text-[24px] tracking-widest text-[#124072de] ">
                       {" "}
-                      <span className="text-lg text-gray-100 font-bold  ">
+                      <span className="text-[20px] lg:text-[24px] text-gray-100 font-bold  ">
                         *
                       </span>{" "}
                       Electricity
@@ -173,13 +173,13 @@ const App = () => {
                 /></div>
               </div>
 
-              <div className=" flex flex-col  md:flex-row-reverse items-center w-full gap-8">
+              <div className=" flex flex-col mt-4  md:flex-row-reverse items-center w-full gap-8 mt-[36px] md:mt-[56px]">
                 <div className="relative w-full">
-                  <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[80%] -skew-y-12 -z-20"></div>
-                  <h2 className="text-[28px] text-[#124072de] font-bold mb-2 ">
+                  {/* <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[80%] -skew-y-12 -z-20"></div> */}
+                  <h2 className="text-[36px] text-[#124072de] font-bold mb-2 ">
                     Payment Gateway
                   </h2>
-                  <p className="text-white text-md text-justify px-1">
+                  <p className="text-[20px] lg:text-[24px] text-justify px-1">
                     Our platform is designed to be user-friendly and intuitive,
                     making it easy for your customers to navigate and complete
                     transactions.
@@ -200,40 +200,40 @@ const App = () => {
                     deserve, while growing your business and expanding your
                     reach.
                   </p>
-                  <h3 className="text-[20px] text-[#124072de] font-bold mb-2 ">
+                  <h3 className="text-[20px] lg:text-[24px] text-[#124072de] font-bold mb-2 ">
                     Features
                   </h3>
                   <ul>
-                    <li className="text-lg tracking-widest text-[#124072de]">
-                      <span className="text-lg text-gray-100 font-bold  ">
+                    <li className="text-[20px] lg:text-[24px] tracking-widest text-[#124072de]">
+                      <span className=" text-gray-100 font-bold  ">
                         *
                       </span>{" "}
                       QR Code
                     </li>
-                    <li className="text-lg tracking-widest text-[#124072de] ">
+                    <li className="text-[20px] lg:text-[24px] tracking-widest text-[#124072de] ">
                       {" "}
-                      <span className="text-lg text-gray-100 font-bold  ">
+                      <span className=" text-gray-100 font-bold  ">
                         *
                       </span>{" "}
                       USSD Code
                     </li>
-                    <li className="text-lg tracking-widest text-[#124072de] ">
+                    <li className="text-[20px] lg:text-[24px] tracking-widest text-[#124072de] ">
                       {" "}
-                      <span className="text-lg text-gray-100 font-bold  ">
+                      <span className=" text-gray-100 font-bold  ">
                         *
                       </span>{" "}
                       Debit and Credit Card
                     </li>
-                    <li className="text-lg tracking-widest text-[#124072de] ">
+                    <li className="text-[20px] lg:text-[24px] tracking-widest text-[#124072de] ">
                       {" "}
-                      <span className="text-lg text-gray-100 font-bold  ">
+                      <span className="text-gray-100 font-bold  ">
                         *
                       </span>{" "}
                       POS
                     </li>
-                    <li className="text-lg tracking-widest text-[#124072de] ">
+                    <li className="text-[20px] lg:text-[24px] tracking-widest text-[#124072de] ">
                       {" "}
-                      <span className="text-lg text-gray-100 font-bold  ">
+                      <span className=" text-gray-100 font-bold  ">
                         *
                       </span>{" "}
                      Mobile and Internet Transfer
@@ -350,7 +350,7 @@ const App = () => {
                 ></textarea>
                 <button
                   type="submit"
-                  className="bg-[#124072] lg:w-[90px] self-center py-5 px-10 md:px-4 rounded-md text-gray-50 font-bold text-lg"
+                  className="bg-[#124072] md:w-[60%] self-center py-5 px-10 md:px-4 rounded-md text-gray-50 font-bold text-lg"
                 >
                   Submit
                 </button>
