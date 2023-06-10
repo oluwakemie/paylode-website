@@ -3,6 +3,7 @@ import Footer from "./component/footer";
 import Header from "./component/header";
 import { motion as m } from "framer-motion";
 import { useForm } from "react-hook-form";
+import { Typewriter } from "react-simple-typewriter";
 
 const App = () => {
   // const { register, handleSubmit } = useForm<Inputs>();
@@ -22,7 +23,7 @@ const App = () => {
         <div>
           <section
             id="#"
-            className="gap-y-8 py-8 bg-slate-100 px-[30px] md:px-[80px] lg:px-[130px] flex flex-col md:flex-row items-center w-full "
+            className="gap-y-8 py-[48px] bg-slate-100 px-[30px] md:px-[80px] lg:px-[130px] flex flex-col md:flex-row items-center gap-5 w-full "
           >
             <div>
               <m.div
@@ -55,9 +56,12 @@ const App = () => {
                   transition={{
                     duration: 2.0,
                   }}
-                  className=" mt-2"
+                  className=" mt-4 flex items-center space-x-3"
                 >
-                  <button className="px-2 py-1 bg-[#124072] rounded-lg text-gray-200">
+                  <button className="px-3 py-2 bg-[#124072] hover:bg-[#175392] font-bold rounded-lg text-gray-200">
+                    <a href="#contact">Get Started</a>
+                  </button>
+                  <button className="px-3 py-2 font-bold bg-[#124072] hover:bg-[#175392] rounded-lg text-gray-200">
                     <a href="#contact">Contact Us</a>
                   </button>
                 </m.div>
@@ -65,7 +69,7 @@ const App = () => {
             </div>
             <div className="object-contain w-full flex justify-center">
               <img
-                src="/heroImageremovebg.png"
+                src="/seamlesss.png"
                 alt=""
                 className="h-[360px] lg:h-[420px] lg:w-[580px] "
               />
@@ -73,8 +77,8 @@ const App = () => {
           </section>
           {/* partners company */}
           <section className="text-gray-400 py-7 bg-slate-50  tracking-[] text-center px-[30px] md:px-[80px] lg:px-[130px]">
-            <h4 className="text-gray-500 tracking-widest font-bold mb-10">
-              Our Major Partners
+            <h4 className="text-[#124072] tracking-widest font-bold mb-10">
+              Trusted Partners
             </h4>
 
             <div className="marquee">
@@ -105,40 +109,44 @@ const App = () => {
             </div>
           </section>
           {/* services */}
+
           <section
             id="product"
-            className="bg-[#90c841] opacity-90 py-10 px-3 md:px-[80px] lg:px-[130px] "
+            className="bg-slate-100 relative opacity-90 py-10 px-3 md:px-[80px] lg:px-[130px] "
           >
-            <h2 className="text-[28px] text-[#124072de] font-bold mb-4 text-center">
-              Products
-            </h2>
-            {/* <div className="bg-[#fafafa] p-2 shadow rounded-lg"> */}
-            <p className="text-white text-[20px] lg:text-[20px] text-md text-justify mb-8">
-              We use the latest technologies to ensure that our products are
-              always up to date and of the highest quality. We believe that
-              technology plays a crucial role in the development and delivery of
-              exceptional products, and we're constantly seeking new ways to
-              leverage the latest tools and techniques to improve our offerings.
-              <br />
-              <br />
-              From cutting-edge software to advanced hardware, we're always on
-              the lookout for the latest innovations that can help us deliver
-              products that exceed your expectations. And with our team of
-              expert engineers and designers, you can be sure that every product
-              we deliver is crafted with the utmost care and attention to
-              detail.
-            </p>
-            {/* </div> */}
+            <div className=" ">
+              <p className="text-[18px] md:text-[32px] text-[#90c841] font-bold mb-5 md:mb-[56px] ">
+                Improved solution to solve{" "}
+                <span style={{ color: "#124072", fontWeight: "bold" }}>
+                  {/* Style will be inherited from the parent element */}
+                  <Typewriter
+                    words={["Payments", "Collection", "Fintech"]}
+                    loop={true}
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={70}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                  />
+                </span>
+              </p>
 
-            <div>
-              <div className=" flex flex-col md:flex-row items-center w-full gap-8 mt-[36px] md:mt-[56px]">
+              <div className="flex flex-col md:flex-row gap-[10%]">
+                <div className="md:w-[50%] w-full flex justify-center">
+                  <img
+                    src="/electImage.png"
+                    alt="electricity"
+                    className="h-[240px] w-full md:h-[360px]  mx-auto   object-cover"
+                  />
+                </div>
                 <div className="relative md:w-[50%] w-full">
                   {/* <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[80%] skew-y-12 -z-20"></div> */}
-                  <h2 className="text-[20px] lg:text-[24px] text-[#124072de] font-bold mb-2 ">
-                    Bill Vending
+                  <h2 className="text-[18px] md:text-[32px] text-[#124072] font-bold mb-2 ">
+                    Enjoy a comprehensive suite of integrated bill vending
+                    solution
                   </h2>
-                  {/* <div className="bg-[#fafafa] p-2 shadow rounded-lg"> */}
-                  <p className="text-[20px] lg:text-[20px]  text-justify mb-8 px-1">
+
+                  <p className="text-[16px] lg:text-[20px] text-[#124072] text-justify mb-8 px-1">
                     Our platform is designed to make bill payments a breeze, so
                     you can spend less time worrying about bills and more time
                     enjoying life. Plus, with our secure and reliable payment
@@ -146,113 +154,335 @@ const App = () => {
                     always safe and secure.
                   </p>
                   {/* </div> */}
-                  <h3 className="text-[20px] lg:text-[24px] text-[#124072de] font-bold mb-2 ">
+                  <h3 className="text-[20px] lg:text-[24px] text-[#124072] font-bold mb-2 ">
                     Features
                   </h3>
                   <ul>
-                    <li className="text-[20px] lg:text-[24px] tracking-widest text-[#124072de] ">
-                      <span className="text-gray-100 font-bold  ">
-                        *
-                      </span>{" "}
+                    <li className="text-[16px] lg:text-[20px] mb-2 flex items-center tracking-widest text-[#124072] ">
+                      <svg
+                        className="mr-2"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="20" cy="20" r="20" fill="#124072" />
+                        <g clip-path="url(#clip0_9_35)">
+                          <path
+                            d="M28.3333 19.2334V20C28.3323 21.797 27.7504 23.5456 26.6744 24.9849C25.5985 26.4242 24.0861 27.4771 22.3628 27.9866C20.6395 28.4961 18.7977 28.4349 17.112 27.8122C15.4264 27.1894 13.9872 26.0384 13.0091 24.5309C12.031 23.0234 11.5665 21.2401 11.6847 19.447C11.803 17.6538 12.4977 15.947 13.6652 14.5809C14.8328 13.2149 16.4106 12.2628 18.1635 11.8668C19.9163 11.4708 21.7502 11.652 23.3917 12.3834"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M28.3333 13.3333L20 21.675L17.5 19.175"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_35">
+                            <rect
+                              width="20"
+                              height="20"
+                              fill="white"
+                              transform="translate(10 10)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
                       Airtime/Data Bills
                     </li>
-                    <li className="text-[20px] lg:text-[24px] tracking-widest text-[#124072de] ">
+                    <li className="text-[16px] lg:text-[20px] mb-2 flex items-center tracking-widest text-[#124072] ">
                       {" "}
-                      <span className="text-[20px] lg:text-[24px] text-gray-100 font-bold  ">
-                        *
-                      </span>{" "}
+                      <svg
+                        className="mr-2"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="20" cy="20" r="20" fill="#124072" />
+                        <g clip-path="url(#clip0_9_35)">
+                          <path
+                            d="M28.3333 19.2334V20C28.3323 21.797 27.7504 23.5456 26.6744 24.9849C25.5985 26.4242 24.0861 27.4771 22.3628 27.9866C20.6395 28.4961 18.7977 28.4349 17.112 27.8122C15.4264 27.1894 13.9872 26.0384 13.0091 24.5309C12.031 23.0234 11.5665 21.2401 11.6847 19.447C11.803 17.6538 12.4977 15.947 13.6652 14.5809C14.8328 13.2149 16.4106 12.2628 18.1635 11.8668C19.9163 11.4708 21.7502 11.652 23.3917 12.3834"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M28.3333 13.3333L20 21.675L17.5 19.175"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_35">
+                            <rect
+                              width="20"
+                              height="20"
+                              fill="white"
+                              transform="translate(10 10)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
                       Electricity
                     </li>
                   </ul>
                 </div>
-                <div className="md:w-[50%] w-full flex justify-center">
-                <img
-                  src="/electImage.png"
-                  alt="electricity"
-                  className="h-[240px] w-full md:h-[360px]  mx-auto   object-cover"
-                /></div>
               </div>
-
-              <div className=" flex flex-col mt-4  md:flex-row-reverse items-center w-full gap-8 mt-[36px] md:mt-[56px]">
-                <div className="relative w-full">
-                  {/* <div className="w-full absolute top-[10%] bg-[#90d62f] left-0 h-[80%] -skew-y-12 -z-20"></div> */}
-                  <h2 className="text-[36px] text-[w] font-bold mb-2 ">
-                    Payment Gateway
+              <div className="flex flex-col relative md:flex-row-reverse gap-[10%] mt-[49px] items-center">
+                <div className="absolute flex justify-center w-full top-[30%] bottom-auto -z-20">
+                  {" "}
+                  {/* <img src="/map.png" alt="map" className="h-[280px]" /> */}
+                </div>
+                <div className="md:w-[50%] w-full flex justify-center">
+                  <img
+                    src="/restaurant.jpg"
+                    alt="man smiling in a resturant"
+                    loading="lazy"
+                    className="h-[360px] md:h-[400px] md:w-[350px]  lg:h-[420px] lg:w-[350px] sm:object-cover "
+                  />
+                </div>
+                <div className="relative md:w-[50%] w-full">
+                  <h2 className="text-[18px] md:text-[32px] text-[#124072] font-bold mb-2 ">
+                    User-friendly and intuitive payment system for seamless
+                    transactions
                   </h2>
-                  <p className="text-[20px] lg:text-[20px] text-justify px-1">
-                    Our platform is designed to be user-friendly and intuitive,
-                    making it easy for your customers to navigate and complete
-                    transactions.
-                    <br />
-                    <br />
-                    Plus, with our secure and reliable payment processing
-                    system, you can accept payments and receive funds seamlessly
-                    from anyone, anywhere in the world. Whether you're running a
+
+                  <p className="text-[16px] lg:text-[20px] text-[#124072] text-justify mb-8 px-1">
+                    With our secure and reliable payment processing system, you
+                    can accept payments and receive funds seamlessly from
+                    anyone, anywhere in the world. Whether you're running a
                     small business or a large enterprise, our payment platform
                     is designed to meet your needs and help you grow your
                     business.
                     <br />
                     <br />
-                    So why wait? Sign up for our payment platform today and
-                    start accepting payments from customers all over the world.
-                    With our easy and seamless channel, you'll be able to
-                    provide your customers with the payment experience they
-                    deserve, while growing your business and expanding your
-                    reach.
+                    We are a marketplace that connects merchants with payment
+                    providers to allow consumers to pay wherever and whenever
+                    they want. We don't just enable payments, we build solutions
+                    that help merchants thrive.
                   </p>
-                  <h3 className="text-[20px] lg:text-[24px] text-[#124072de] font-bold mb-2 ">
+
+                  {/* </div> */}
+                  <h3 className="text-[20px] lg:text-[24px] text-[#124072] font-bold mb-2 ">
                     Features
                   </h3>
                   <ul>
-                    <li className="text-[20px] lg:text-[24px] tracking-widest text-[#124072de]">
-                      <span className=" text-gray-100 font-bold  ">
-                        *
-                      </span>{" "}
-                      QR Code
+                    <li className="text-[16px] lg:text-[20px] mb-2 flex items-center tracking-widest text-[#124072] ">
+                      <svg
+                        className="mr-2"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="20" cy="20" r="20" fill="#124072" />
+                        <g clip-path="url(#clip0_9_35)">
+                          <path
+                            d="M28.3333 19.2334V20C28.3323 21.797 27.7504 23.5456 26.6744 24.9849C25.5985 26.4242 24.0861 27.4771 22.3628 27.9866C20.6395 28.4961 18.7977 28.4349 17.112 27.8122C15.4264 27.1894 13.9872 26.0384 13.0091 24.5309C12.031 23.0234 11.5665 21.2401 11.6847 19.447C11.803 17.6538 12.4977 15.947 13.6652 14.5809C14.8328 13.2149 16.4106 12.2628 18.1635 11.8668C19.9163 11.4708 21.7502 11.652 23.3917 12.3834"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M28.3333 13.3333L20 21.675L17.5 19.175"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_35">
+                            <rect
+                              width="20"
+                              height="20"
+                              fill="white"
+                              transform="translate(10 10)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Mobile and Internet Transfer
                     </li>
-                    <li className="text-[20px] lg:text-[24px] tracking-widest text-[#124072de] ">
-                      {" "}
-                      <span className=" text-gray-100 font-bold  ">
-                        *
-                      </span>{" "}
+                    <li className="text-[16px] lg:text-[20px] mb-2 flex items-center tracking-widest text-[#124072] ">
+                      <svg
+                        className="mr-2"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="20" cy="20" r="20" fill="#124072" />
+                        <g clip-path="url(#clip0_9_35)">
+                          <path
+                            d="M28.3333 19.2334V20C28.3323 21.797 27.7504 23.5456 26.6744 24.9849C25.5985 26.4242 24.0861 27.4771 22.3628 27.9866C20.6395 28.4961 18.7977 28.4349 17.112 27.8122C15.4264 27.1894 13.9872 26.0384 13.0091 24.5309C12.031 23.0234 11.5665 21.2401 11.6847 19.447C11.803 17.6538 12.4977 15.947 13.6652 14.5809C14.8328 13.2149 16.4106 12.2628 18.1635 11.8668C19.9163 11.4708 21.7502 11.652 23.3917 12.3834"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M28.3333 13.3333L20 21.675L17.5 19.175"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_35">
+                            <rect
+                              width="20"
+                              height="20"
+                              fill="white"
+                              transform="translate(10 10)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
                       USSD Code
                     </li>
-                    <li className="text-[20px] lg:text-[24px] tracking-widest text-[#124072de] ">
-                      {" "}
-                      <span className=" text-gray-100 font-bold  ">
-                        *
-                      </span>{" "}
+                    <li className="text-[16px] lg:text-[20px] mb-2 flex items-center tracking-widest text-[#124072] ">
+                      <svg
+                        className="mr-2"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="20" cy="20" r="20" fill="#124072" />
+                        <g clip-path="url(#clip0_9_35)">
+                          <path
+                            d="M28.3333 19.2334V20C28.3323 21.797 27.7504 23.5456 26.6744 24.9849C25.5985 26.4242 24.0861 27.4771 22.3628 27.9866C20.6395 28.4961 18.7977 28.4349 17.112 27.8122C15.4264 27.1894 13.9872 26.0384 13.0091 24.5309C12.031 23.0234 11.5665 21.2401 11.6847 19.447C11.803 17.6538 12.4977 15.947 13.6652 14.5809C14.8328 13.2149 16.4106 12.2628 18.1635 11.8668C19.9163 11.4708 21.7502 11.652 23.3917 12.3834"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M28.3333 13.3333L20 21.675L17.5 19.175"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_35">
+                            <rect
+                              width="20"
+                              height="20"
+                              fill="white"
+                              transform="translate(10 10)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
                       Debit and Credit Card
                     </li>
-                    <li className="text-[20px] lg:text-[24px] tracking-widest text-[#124072de] ">
+                    <li className="text-[16px] lg:text-[20px] mb-2 flex items-center tracking-widest text-[#124072] ">
+                      <svg
+                        className="mr-2"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="20" cy="20" r="20" fill="#124072" />
+                        <g clip-path="url(#clip0_9_35)">
+                          <path
+                            d="M28.3333 19.2334V20C28.3323 21.797 27.7504 23.5456 26.6744 24.9849C25.5985 26.4242 24.0861 27.4771 22.3628 27.9866C20.6395 28.4961 18.7977 28.4349 17.112 27.8122C15.4264 27.1894 13.9872 26.0384 13.0091 24.5309C12.031 23.0234 11.5665 21.2401 11.6847 19.447C11.803 17.6538 12.4977 15.947 13.6652 14.5809C14.8328 13.2149 16.4106 12.2628 18.1635 11.8668C19.9163 11.4708 21.7502 11.652 23.3917 12.3834"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M28.3333 13.3333L20 21.675L17.5 19.175"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_35">
+                            <rect
+                              width="20"
+                              height="20"
+                              fill="white"
+                              transform="translate(10 10)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      QR Code
+                    </li>
+                    <li className="text-[16px] lg:text-[20px] mb-2 flex items-center tracking-widest text-[#124072] ">
                       {" "}
-                      <span className="text-gray-100 font-bold  ">
-                        *
-                      </span>{" "}
+                      <svg
+                        className="mr-2"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="20" cy="20" r="20" fill="#124072" />
+                        <g clip-path="url(#clip0_9_35)">
+                          <path
+                            d="M28.3333 19.2334V20C28.3323 21.797 27.7504 23.5456 26.6744 24.9849C25.5985 26.4242 24.0861 27.4771 22.3628 27.9866C20.6395 28.4961 18.7977 28.4349 17.112 27.8122C15.4264 27.1894 13.9872 26.0384 13.0091 24.5309C12.031 23.0234 11.5665 21.2401 11.6847 19.447C11.803 17.6538 12.4977 15.947 13.6652 14.5809C14.8328 13.2149 16.4106 12.2628 18.1635 11.8668C19.9163 11.4708 21.7502 11.652 23.3917 12.3834"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M28.3333 13.3333L20 21.675L17.5 19.175"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_35">
+                            <rect
+                              width="20"
+                              height="20"
+                              fill="white"
+                              transform="translate(10 10)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
                       POS
                     </li>
-                    <li className="text-[20px] lg:text-[24px] tracking-widest text-[#124072de] ">
-                      {" "}
-                      <span className=" text-gray-100 font-bold  ">
-                        *
-                      </span>{" "}
-                     Mobile and Internet Transfer
-                    </li>
                   </ul>
-                </div>
-                <div className="w-full">
-                <img
-                  src="/restaurant.jpg"
-                  alt="man smiling in a resturant"
-                  loading="lazy"
-                  className="h-[360px] md:h-[400px] md:w-[350px]  lg:h-[420px] lg:w-[350px] sm:object-cover "
-                />
                 </div>
               </div>
             </div>
           </section>
+
           {/* Features */}
-          <section className="bg-slate-100 py-9 px-[30px] md:px-[80px] lg:px-[130px] ">
+          <section className="bg-slate-100 py-9 px-[30px] relative md:px-[80px] lg:px-[130px] ">
             <h2 className="text-[28px] text-[#124072de] text-center font-bold mb-4">
               WHY YOU SHOULD USE PAYLODE
             </h2>
@@ -303,60 +533,61 @@ const App = () => {
               </div>
             </div>
           </section>
+          <section className="bg-slate-100 py-9 px-[30px] h-[80vh] relative md:px-[80px] lg:px-[130px] ">
+            <div className="w-full flex justify-center">
+              <div id="contact" className="bg-[#90c841] w-[70%] absolute rounded-lg -bottom-[20%] py-9 px-[30px] md:px-[70px] lg:px-[100px]  ">
+                <div>
+                  <h2 className="text-[28px] text-[#124072de] font-bold mb-4 text-center">
+                    SEND A MAIL
+                  </h2>
+                  <form
+                    onSubmit={handleSubmit(onSubmit)}
+                    action=""
+                    className="flex flex-col space-y-2  "
+                  >
+                    <div className="flex gap-2   flex-col md:flex-row md:space-x-2 md:justify-between">
+                      <input
+                        {...register("name")}
+                        placeholder="Name"
+                        type="text"
+                        className="contactInput w-full"
+                        required
+                      />
+                      <input
+                        {...register("email")}
+                        placeholder="Email"
+                        type="email"
+                        className="contactInput w-full"
+                        required
+                      />
+                    </div>
+                    <input
+                      {...register("subject")}
+                      placeholder="Subject"
+                      type="text"
+                      className="contactInput"
+                      required
+                    />
+                    <textarea
+                      {...register("message")}
+                      placeholder="Message"
+                      className="contactInput"
+                    ></textarea>
+                    <button
+                      type="submit"
+                      className="bg-[#124072] md:w-[60%] self-center py-5 px-10 md:px-4 rounded-md text-gray-50 font-bold text-lg"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
           {/* FAQs */}
           <section></section>
 
           {/* contact us */}
-          <section
-            id="contact"
-            className="bg-[#90c841] py-9 px-[30px] md:px-[80px] lg:px-[130px] "
-          >
-            <div>
-              <h2 className="text-[28px] text-[#124072de] font-bold mb-4 text-center">
-                CONTACT US
-              </h2>
-              <form
-                onSubmit={handleSubmit(onSubmit)}
-                action=""
-                className="flex flex-col space-y-2  "
-              >
-                <div className="flex gap-2   flex-col md:flex-row md:space-x-2 md:justify-between">
-                  <input
-                    {...register("name")}
-                    placeholder="Name"
-                    type="text"
-                    className="contactInput w-full"
-                    required
-                  />
-                  <input
-                    {...register("email")}
-                    placeholder="Email"
-                    type="email"
-                    className="contactInput w-full"
-                    required
-                  />
-                </div>
-                <input
-                  {...register("subject")}
-                  placeholder="Subject"
-                  type="text"
-                  className="contactInput"
-                  required
-                />
-                <textarea
-                  {...register("message")}
-                  placeholder="Message"
-                  className="contactInput"
-                ></textarea>
-                <button
-                  type="submit"
-                  className="bg-[#124072] md:w-[60%] self-center py-5 px-10 md:px-4 rounded-md text-gray-50 font-bold text-lg"
-                >
-                  Submit
-                </button>
-              </form>
-            </div>
-          </section>
         </div>
       </div>
       <Footer />
