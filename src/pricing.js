@@ -6,7 +6,9 @@ const Pricing = () => {
   return (
     <div>
       <Header />
-      <p>This is Pricing Page..</p>
+      Paylode Provide thr best Pricing 
+
+      
       <Footer />
     </div>
   );

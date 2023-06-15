@@ -77,7 +77,7 @@ const Home = () => {
           </section>
           {/* partners company */}
           <section className="text-gray-400 py-7 bg-slate-50  tracking-[] text-center px-[30px] md:px-[80px] lg:px-[130px]">
-            <h4 className="text-[#124072] tracking-widest font-bold mb-10">
+            <h4 className="text-[#124072] md:text-[20px] tracking-widest font-bold mb-10">
               Trusted Partners
             </h4>
 
